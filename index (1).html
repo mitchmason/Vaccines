@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vaccine information and appointments</title>
+    </head>
+    <body>
+        <h1>Vaccine information and appointments</h1>
+        <p><Vaccine information</p>
+            <p>Vaccine appointments</p>
+
+        <script>
+            window.watsonAssistantChatOptions = {
+                integrationID: "8ed67863-038e-40d7-b6b1-6cf63fc1a260", // The ID of this integration.
+                region: "us-south", // The region your integration is hosted in.
+                serviceInstanceID: "bbd4d174-b4cf-41ea-bfc3-248773d8c223", // The ID of your service instance.
+                onLoad: function(instance) { instance.render(); }
+              };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+                (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+                "/WatsonAssistantChatEntry.js"
+              document.head.appendChild(t);
+            });
+          </script>
+    </body>
+</html>
